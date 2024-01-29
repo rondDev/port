@@ -21,7 +21,7 @@
 
 <div class="w-full flex justify-center">
   <div
-    class="flex flex-col bg-secondaryColor rounded-lg w-[75vw] cursor-pointer hover:bg-blue-900 hover:translate-y-[-0.25rem]"
+    class="flex flex-col bg-secondaryColor rounded-lg w-[75vw] cursor-pointer hover:bg-pink-700 hover:translate-y-[-0.25rem] transition-transform hover:scale-105"
   >
     <div class="flex justify-between ml-6 mr-6 mt-6">
       <p class="text-[2em]">{title}</p>
