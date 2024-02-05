@@ -25,9 +25,6 @@
   "type": "module",
   "dependencies": {
     "@biomejs/biome": "^1.5.3",
-    "@yerkopalma/cursor": "^1.1.2",
-    "curseur": "^0.0.8",
-    "gsap": "^3.12.5",
     "javascript-time-ago": "^2.5.9"
   }
 }
