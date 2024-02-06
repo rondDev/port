@@ -4,6 +4,7 @@
 ** TODO create projects page (/projects/)
 ** TODO create projects page for each project (/projects/[id])
 ** TODO figure out file format for projects
-** TODO finalize design decisions
+** TODO finalize design decisions (will most likely change)
 ** POSSIBLY make design for the page
 *** NOTE Would make the design more universal across the site, instead of making it up as I go
+*** NOTE Would be nice to have a properly responsive design
