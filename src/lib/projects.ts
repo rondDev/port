@@ -1,5 +1,4 @@
-
-let projects = [
+const projects = [
     {
         id: "0",
         image: {
