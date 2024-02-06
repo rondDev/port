@@ -31,7 +31,7 @@
     </div>
     <div class="flex">
       {#if image}
-        <img src={image.link} alt={image.alt} class="h-[10em] w-auto m-4" />
+        <img src={image.link} alt={image.alt} class="hidden sm:block sm:h-[10em] sm:w-auto m-4" />
       {/if}
       <p class="ml-8 mr-8 mb-8 mt-4 text-gray-300">
         {content}
