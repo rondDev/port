@@ -1,7 +1,7 @@
 <script lang="ts">
   import Header from "$lib/components/Header.svelte";
   import ProjectCard from "$lib/components/ProjectCard.svelte";
-import { default as projects } from '$lib/projects'
+import { projects } from '$lib/projects'
 </script>
 
 <div class="h-full w-full text-gray-200 flex flex-col items-center overflow-x-scroll pb-8">
