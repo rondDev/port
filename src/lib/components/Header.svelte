@@ -14,7 +14,7 @@ let ow;
 let oh;
 </script>
 
-<div bind:offsetWidth={ow} bind:offsetHeight={oh} bind:clientWidth={w} bind:clientHeight={h} class="w-[80vw] h-[8vw] flex items-center m-12 bg-accentColor rounded-full z-10">
+<div bind:offsetWidth={ow} bind:offsetHeight={oh} bind:clientWidth={w} bind:clientHeight={h} class="w-[70vw] h-[7vw] flex items-center m-12 bg-accentColor rounded-full z-10">
   <a
     href="/"
     class="ml-4 mr-auto text-[4vw] hover:text-gray-700 hover:translate-y-[-0.25rem] transition-transform hover:scale-110"
