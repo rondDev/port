@@ -1,0 +1,9 @@
+#+TODO: TODO POSSIBLY NOTE | DONE CANCELED
+
+* Todos for the project [0%]
+** TODO create projects page (/projects/)
+** TODO create projects page for each project (/projects/[id])
+** TODO figure out file format for projects
+** TODO finalize design decisions
+** POSSIBLY make design for the page
+*** NOTE Would make the design more universal across the site, instead of making it up as I go

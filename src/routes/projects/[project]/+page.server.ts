@@ -1,12 +1,13 @@
-import { error, redirect } from "@sveltejs/kit";
+import { getProjectById } from "$lib/projects";
+import { error } from "@sveltejs/kit";
 
+/** @type {import('./$types').PageLoad} */
 export function load({ params }) {
-    if (params.slug === 'hello-world') {
-        return {
-            title: 'Hello world!',
-            content: 'Welcome to our blog. Lorem ipsum dolor sit amet...'
-        };
+    const project = getProjectById(params.project)[0];
+
+    if(project.length < 1) {
+        error(404, "can't find")
     }
 
-    redirect(303, "/");
+	  return { project }
 }
