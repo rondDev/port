@@ -35,7 +35,7 @@
                     </p>
                     <Popover
                         placement="bottom"
-                        class="w-48 h-32 bg-purple-950 p-4 text-pretty duration-500 transition-opacity"
+                        class="w-48 h-42 bg-purple-950 p-4 text-pretty duration-500 transition-opacity"
                         triggeredBy="#p1"
                     >
                         I prefer my name lowercased, however, I accept lower and
