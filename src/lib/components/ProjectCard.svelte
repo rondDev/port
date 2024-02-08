@@ -2,6 +2,7 @@
   import TimeAgo, { type DateInput } from "javascript-time-ago";
 
   let imageType: { link: string; alt: string };
+  export let id: string;
   export let image: typeof imageType | null;
   export let title: string;
   export let time: DateInput;
@@ -20,8 +21,9 @@
 </script>
 
 <div class="w-full flex justify-center">
-  <div
+  <a
     class="flex flex-col bg-secondaryColor rounded-lg w-[75vw] cursor-pointer hover:bg-pink-700 hover:translate-y-[-0.25rem] transition-transform hover:scale-105"
+      href={`/projects/${id}`}
   >
     <div class="flex justify-between ml-6 mr-6 mt-6">
       <p class="text-[2em]">{title}</p>
@@ -37,5 +39,5 @@
         {content}
       </p>
     </div>
-  </div>
+  </a>
 </div>
