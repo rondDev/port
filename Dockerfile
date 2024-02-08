@@ -1,20 +1,46 @@
-##### Stage 1 - Development - Generate dist folder
-FROM node:21 AS builder
+##### BUILDER
+FROM node:19-alpine AS deps
 
-# RUN npm install -g npm
+WORKDIR /app
+COPY package.json  pnpm-lock.yaml pnpm-lock.yaml\* ./
 
-WORKDIR /usr/app
-COPY package.json ./
-COPY .npmrc ./
-RUN npm install --force
-RUN cp -R node_modules prod_node_modules
+RUN yarn global add pnpm
+RUN pnpm i;
+
+##### BUILDER
+FROM node:19-alpine AS proddeps
+
+WORKDIR /app
+
+COPY package.json pnpm-lock.yaml pnpm-lock.yaml\* ./
+
+RUN yarn global add pnpm
+RUN pnpm i -P;
+
+
+##### BUILDER
+FROM node:19-alpine AS builder
+
+WORKDIR /app
+COPY --from=deps /app/node_modules ./node_modules
 COPY . .
-RUN npm run build
-##### Stage 2 - Production
-FROM builder as production
-WORKDIR /usr/app
-COPY --from=builder /usr/app/prod_node_modules ./node_modules
-COPY --from=builder /usr/app/package*.json ./
-ENV NODE_ENV=production
-COPY --from=builder /usr/app/.svelte-kit ./.svelte-kit
-CMD [ "npm", "start" ]
+
+RUN yarn global add pnpm
+RUN pnpm build
+
+##### RUNNER
+
+FROM --platform=linux/amd64 node:19-alpine AS runner
+WORKDIR /app
+
+ENV NODE_ENV production
+ENV HTTPS true
+
+COPY --from=proddeps /app/node_modules ./node_modules
+COPY package.json pnpm-lock.yaml\* ./
+COPY --from=builder /app/build ./build
+
+EXPOSE 3000
+ENV PORT 3000
+
+CMD ["node", "build"]
