@@ -6,7 +6,7 @@
     onMount(() => (url = window.location.href));
 </script>
 
-<div class="w-[100vw] h-[7vw] flex items-center mb-12 bg-accentColor z-10">
+<div class="w-full h-[7vw] flex items-center mb-12 bg-accentColor z-10">
     <a
         href="/"
         class="ml-4 mr-auto text-[4vw] hover:text-gray-700 hover:translate-y-[-0.25rem] transition-transform hover:scale-110"
