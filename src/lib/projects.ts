@@ -5,12 +5,22 @@ const projects = [
         id: '0',
         image: {
             link: 'https://i.rond.cc/api/FCeGhfTM0OJC.png',
-            alt: 'Picture of the sky',
+            alt: 'Image Uploader Dashboard',
         },
         title: 'Image Uploader',
         time: new Date(2023, 8),
         content:
         'I was tired of having a php script handling all my screenshot needs, so I developed a full solution to image/video uploads for my use case.',
+    },
+    {
+        id: '1',
+        image: {
+            link: 'https://i.rond.cc/api/9khZnyo2jnTh.png',
+            alt: 'Story Intro Mystic Woods'
+        },
+        title: 'Mystic Woods Game',
+        time: new Date(2024, 3, 2, 11),
+        content: 'I was tasked to build a console based game.'
     }
 ];
 

@@ -7,7 +7,7 @@ import { projects } from '$lib/projects'
 <div class="h-full w-full text-gray-200 flex flex-col items-center overflow-x-scroll pb-8">
   <Header />
   <div class="h-full w-full flex flex-col gap-12">
-    {#each projects as project}
+    {#each projects.reverse() as project}
       <ProjectCard
         id={project.id}
         image={project.image}

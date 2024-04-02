@@ -10,14 +10,15 @@ export function load({ params }) {
     switch(splitArr[splitArr.length - 1]) {
         case "0": {
             redirect(302, '/projects/image-uploader');
-            break;
+        }
+        case "1": {
+            redirect(302, '/projects/mystic-woods');
         }
         default: {
                 // redirect(306, '/');
             error(404, {
                 message: "Couldn't find this project"
             })
-            break;
         }
     }
 }
