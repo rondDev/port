@@ -22,7 +22,7 @@
     class="h-full w-full text-gray-200 flex flex-col items-center overflow-x-scroll pb-8"
 >
     <Header />
-    <div class="w-full grid grid-cols-2 justify-evenly">
+    <div class="h-full w-full grid grid-cols-2 justify-evenly">
         <div
             class="flex flex justify-center items-center px-24 h-72 items-center bg-purple-500"
         >
