@@ -6,10 +6,10 @@
     onMount(() => (url = window.location.href));
 </script>
 
-<div class="w-full h-[7vw] flex items-center mb-12 bg-accentColor z-10">
+<div class="w-full h-[7vw] flex items-center mb-12 bg-backgroundColor z-10 border-b border-slate-800">
     <a
         href="/"
-        class="ml-4 mr-auto text-[4vw] hover:text-gray-700 hover:translate-y-[-0.25rem] transition-transform hover:scale-110"
+        class="ml-8 mr-auto text-[3vw] hover:text-gray-700 hover:translate-y-[-0.25rem] transition-transform hover:scale-110"
         >Portfolio</a
     >
     <div class="flex gap-8 mr-8 text-[2.5vw] h-full items-center">

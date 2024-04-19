@@ -19,12 +19,14 @@
 </script>
 
 <div
-    class="h-full w-full text-gray-200 flex flex-col items-center overflow-x-scroll pb-8"
+    class="h-full w-full text-gray-200 flex flex-col items-center pb-8"
 >
     <Header />
-    <div class="h-full w-full grid grid-cols-2 justify-evenly">
+    <div class="h-full">
+
+    <div class="w-full grid grid-cols-2 justify-evenly pt-24">
         <div
-            class="flex flex justify-center items-center px-24 h-72 items-center bg-purple-500"
+            class="flex flex justify-center items-center px-24 h-72 items-center bg-[#2d0f1f]"
         >
             <div>
                 <div class="w-fit h-full p-8">
@@ -49,7 +51,7 @@
         </div>
         <div>
             <div class="w-full h-full">
-                <div class="bg-primaryColor h-72 w-full">
+                <div class="bg-[#220c1a] h-72 w-full">
                     <div class="flex w-full justify-center items-center gap-2">
                         <h1
                             class="h-16 flex justify-center items-center text-3xl"
@@ -80,7 +82,13 @@
                         <Prisma class="w-24 h-24 mx-4" tabindex="-1" />
                     </Marquee>
                 </div>
+
             </div>
         </div>
+    </div>
+            <div class="mt-24 w-full flex justify-center">
+                <a class="bg-[#752945] text-white rounded-full w-72 h-24 flex items-center justify-center text-5xl shadow-2xl shadow-pink-500/50 hover:scale-105 transition-transform" href="/contact">Contact me</a>
+                <a class="text-white rounded-full w-36 h-24 flex items-center justify-center text-3xl underline hover:scale-110 transition-transform" href="/about">About</a>
+            </div>
     </div>
 </div>

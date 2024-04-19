@@ -15,6 +15,17 @@ const projects = [
     {
         id: '1',
         image: {
+            link: 'https://i.rond.cc/api/rjyMu0JrWIy3.png',
+            alt: 'Bogopass Completing 60 Char Password',
+        },
+        title: 'Bogopass',
+        time: new Date(2024, 2, 20),
+        content:
+        'A friend presented me with a purposefully bad password generator he had made, so I remade it in rust.',
+    },
+    {
+        id: '2',
+        image: {
             link: 'https://i.rond.cc/api/9khZnyo2jnTh.png',
             alt: 'Story Intro Mystic Woods'
         },

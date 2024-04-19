@@ -7,7 +7,7 @@
     import Header from "$lib/components/Header.svelte";
 
     onMount(() => {
-        pushState("/projects/mystic-woods-2");
+        pushState("/projects/bogopass-1");
     });
 
     let index = 0;
@@ -38,12 +38,12 @@
             >
                 <img src={images[index].src} alt={images[index].alt} />
             </Modal>
-            <div class="text-red-200 text-4xl mb-10 flex justify-between">
-                <h1>Mystic Woods Game</h1>
+            <div class="text-red-400 text-4xl mb-10 flex justify-between">
+                <h1>Bogopass Password Generator</h1>
                     <GradientButton
                         color="purpleToPink"
                         class=""
-                        on:click={() => window.open("https://github.com/rondK-H01/mystic_woods")}
+                        on:click={() => window.open("https://git.rond.cc/rond/bogopass")}
                     >
                         View source code
                     </GradientButton>
@@ -53,7 +53,7 @@
                 <div class="max-w-[100%]">
                     <Carousel {images} let:Controls bind:index duration="3000">
                         <div class="w-[80%] h-48 absolute"></div>
-                        <Slide slot="slide" image={images[index]}></Slide>
+                        <Slide class="object-scale-down" slot="slide" image={images[index]}></Slide>
                         <Controls />
                     </Carousel>
                     <GradientButton
@@ -68,21 +68,24 @@
             </div>
 
             <div>
-                <h3 class="text-2xl mb-4">The task</h3>
+                <h3 class="text-2xl mb-4">The explanation</h3>
                 <p class="text-slate-300 text-xl mb-8">
-                    Build a story based game in the console. It must use
-                    Console.WriteLine and Console.ReadLine for input and output.
-                    For repeated tasks, a loop should be utilized.
+                    Bogopass is a password manager that works by creating
+                    random characters from the character-set and then checks
+                    if those characters meet the requirements specified. This
+                    is an extremely bad way of doing the password generation,
+                    but that is the whole point.
                 </p>
                 <h3 class="text-2xl mb-4">The implementation</h3>
                 <p class="text-slate-300 text-xl">
-                    The implementation started off with the ambitious idea
-                    to include a map that would show the surroundings in a 2D
-                    array, but it quickly turned into a difficult task in the
-                    timeframe for the project. In addition to it being a
-                    difficulty, it would be way too far above what the project
-                    task should be. So what remains is a basic game which
-                    contains multiple different outcomes.
+                    The implementation tries it's best to compute in the
+                    fastest possible way, making it take less than a
+                    millisecond on average for a single iteration. In the
+                    screenshot above you'll see that 2.3 billion iterations
+                    were executed in about 805 seconds. This does seem like
+                    a really long time, but in reality, the computations can't
+                    be optimized a whole lot more without changing the whole
+                    point of the project.
                 </p>
             </div>
         </div>

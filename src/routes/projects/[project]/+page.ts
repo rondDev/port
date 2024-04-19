@@ -12,6 +12,9 @@ export function load({ params }) {
             redirect(302, '/projects/image-uploader');
         }
         case "1": {
+            redirect(302, '/projects/bogopass');
+        }
+        case "2": {
             redirect(302, '/projects/mystic-woods');
         }
         default: {
