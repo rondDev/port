@@ -19,7 +19,7 @@
                 url.includes("/about")
                     ? "translate-y-[-0.25rem] scale-105 text-green-400"
                     : ""
-            }`}>/about</a
+            }`}>About</a
         >
         <a
             href="/projects"
@@ -27,7 +27,7 @@
                 url.includes("/projects")
                     ? "translate-y-[-0.25rem] scale-105 text-green-400"
                     : ""
-            }`}>/projects</a
+            }`}>Projects</a
         >
         <a
             href="/contact"
@@ -35,7 +35,7 @@
                 url.includes("/contact")
                     ? "translate-y-[-0.25rem] scale-105 text-green-400"
                     : ""
-            }`}>/contact</a
+            }`}>Contact</a
         >
     </div>
 </div>

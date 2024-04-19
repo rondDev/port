@@ -89,9 +89,9 @@
                 <p>And even more languages with little experience...</p>
             </div>
         </div>
-        <div class="mt-24">
+        <div class="mt-[80rem] sm:mt-[58rem] md:mt-[46rem] lg:mt-[26rem] xl:mt-[20rem] 2xl:mt-[10rem]">
         <h2 class="text-5xl mb-8 flex justify-center">Frameworks</h2>
-        <div class="flex justify-evenly items-center gap-4">
+        <div class="flex max-xl:flex-col justify-evenly items-center gap-4">
             <div class="flex flex-col justify-center items-center h-48 w-96 bg-[#222243] rounded p-4">
                 <h3 class="text-xl">Svelte</h3>
                 <p>Svelte is by far my favorite framework, the developer experience seems unhindered in comparison to some other frameworks (*cough* NextJs). It makes developing such a joy.</p>

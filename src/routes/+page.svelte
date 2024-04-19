@@ -87,8 +87,8 @@
         </div>
     </div>
             <div class="mt-24 w-full flex justify-center">
-                <a class="bg-[#752945] text-white rounded-full w-72 h-24 flex items-center justify-center text-5xl shadow-2xl shadow-pink-500/50 hover:scale-105 transition-transform" href="/contact">Contact me</a>
-                <a class="text-white rounded-full w-36 h-24 flex items-center justify-center text-3xl underline hover:scale-110 transition-transform" href="/about">About</a>
+                <a class="bg-[#752945] text-white rounded-full w-64 h-20 flex items-center justify-center text-4xl shadow-2xl shadow-pink-500/50 hover:scale-105 transition-transform" href="/contact">Contact me</a>
+                <a class="text-white rounded-full w-36 h-20 flex items-center justify-center text-3xl underline hover:scale-110 transition-transform" href="/about">About</a>
             </div>
     </div>
 </div>
